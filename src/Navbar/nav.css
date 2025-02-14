@@ -1,0 +1,89 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    background-color:white;
+}
+nav .logo{
+    font-size: 20px;
+    color: green;
+    width: 100%;
+    padding-left: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+nav .nav-menu{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-right: 10px;
+}
+nav ul li{
+    text-decoration: none;
+}
+nav ul li .nav-link{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+}
+.toglle-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 50px;
+    display: none;
+}
+.bar{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 2px;
+}
+
+
+
+
+@media (max-width: 768px) { 
+    nav {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    nav .logo {
+        margin-bottom: 10px; 
+        display: flex;
+    }
+    
+    nav .nav-menu {
+        flex-direction: column; 
+        width: 100%;
+        text-align: center; 
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+
+    nav ul li {
+        width: 100%;    
+    }
+
+    nav ul li .nav-link {
+        padding: 10px; 
+        display: block; 
+        border-bottom: 1px solid #eee; 
+    }
+    .toglle-btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .bar{
+        width: 25px;
+        height: 3px;
+    }
+}
